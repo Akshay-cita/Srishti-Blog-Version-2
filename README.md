@@ -6,7 +6,7 @@ Blogger website created by Python framework Django.Front end templates are made 
 
 * [Django crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/#) *for Form rendering*
 
-* [Pillow](https://pillow.readthedocs.io/en/stable/)*for handling media in django*
+* [Pillow](https://pillow.readthedocs.io/en/stable/) *for handling media in django*
 
 
 ## Here You can find the link:
