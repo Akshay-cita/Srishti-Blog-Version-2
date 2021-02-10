@@ -1,14 +1,16 @@
 {% extends "app1/base.html" %}
 {% block content %}
-
+{%for pst in post%}
 <article class="media content-section">
+	<img class="rounded-circle article-img" src="{{pst.author.profile.image.url}}">
 	<div class="media-body">
 		<div class="article-metadata">
-			<a class="mr-2" href="#">manu</a>
-			<small class="text-muted">20 june 2020</small>
+			<a class="mr-2" href="#">{{pst.author}}</a>
+			<small class="text-muted">{{pst.date_time}}</small>
 		</div>
-		<h2><a class="article-title" href="#">gdigidngbidndibndoskmgom</a></h2>
-		<p class="article-content">edrgie0g0eeg  ej0igjdkgpodkg epgkpegokpeg,pg,eg epgkepgkepgekg epgoewkpgkegpog,g gpogkrpgkrg</p>
+		<h2><a class="article-title" href="{%url 'post-detail' pst.id %}">{{pst.title}}</a></h2>
+		<p class="article-content">{{pst.content}}</p>
 	</div>
 </article>
+{%endfor%}
 {% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn Blog_Srishti_V2.wsgi
